@@ -23,7 +23,11 @@ public class UsuarioDao {
 			throw new RuntimeException(e);
 		}
 	}
-	
+	/**
+	 * 
+	 * @param usuario
+	 * @return
+	 */
 	public boolean existeUsuario(Usuario usuario){
 		String sql = "select * from usuario where login=? and senha=?";
 		
